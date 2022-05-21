@@ -46,7 +46,27 @@ public class PlagiarismDetector implements IPlagiarismDetector {
 	public void readFile(File file) throws IOException {
 		// TODO Auto-generated method stub
 		// most of your work can happen in this method
-		
+		Scanner reader = new Scanner(file); //scanner to read in file
+
+        String[] data = new String[3]; 
+
+        int iteration = 0; 
+
+        while (reader.hasNextLine()) { 
+            iteration++;
+            if (iteration < 1) {
+                reader.nextLine();
+                continue;
+            }
+            else {
+                String list[] = reader.nextLine().trim().split(",");{
+                    for (int j = 0; j < 3; j++) {
+                        data[j] = list[j];
+                        System.out.println(data[j]);
+                    }
+                }
+            }
+        }
     }
 
 	@Override
