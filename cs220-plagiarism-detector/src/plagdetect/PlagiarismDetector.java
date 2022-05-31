@@ -15,7 +15,7 @@ public class PlagiarismDetector implements IPlagiarismDetector {
 	@Override
 	public int getN() {
 		// TODO Auto-generated method stub
-		return 0;
+		return n;
 	}
 
 	@Override
@@ -67,6 +67,7 @@ public class PlagiarismDetector implements IPlagiarismDetector {
                 }
             }
         }
+
     }
 
 	@Override
