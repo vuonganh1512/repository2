@@ -120,7 +120,7 @@ public interface IPlagiarismDetector
      * @param file2
      * @return
      */
-    int getNumNGramsInCommon(String file1, String file2);
+    int getNumNGramsInCommon(String file1, String file2, int count);
     
     /**
      * Return a collection of pairs of documents that have at least minNgrams
